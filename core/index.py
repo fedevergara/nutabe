@@ -3,11 +3,10 @@ from dash import html
 
 index_layout = html.Div(
     [
-        html.H1(["Index", dbc.Badge("New", className="ms-1")]),
-        html.H2(["Index", dbc.Badge("New", className="ms-1")]),
-        html.H3(["Index", dbc.Badge("New", className="ms-1")]),
-        html.H4(["Index", dbc.Badge("New", className="ms-1")]),
-        html.H5(["Index", dbc.Badge("New", className="ms-1")]),
-        html.H6(["Index", dbc.Badge("New", className="ms-1")]),
+        html.Main(
+            html.Div([
+                html.H1("¡Bienvenido!"),
+                html.P("Este portal que está en construcción, se dedicará a ofrecer indicadores, informes y herramientas para Dirección de Relaciones Internacionales de la Universidad de Antioquia.", className="lead"),
+        ], className="bg-body-tertiary p-4 rounded"), className="container"),
     ]
 )
